@@ -1,0 +1,98 @@
+.holder-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+@media (min-width: 768px) {
+    .holder-contacto {
+        margin: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .holder-contacto {
+        margin: 100px;
+    }
+}
+
+.contactorapido h2,
+.datos h2,
+.datos p,
+.datos ul li,
+.Nuestras-Redes h2,
+.Nuestras-Redes p,
+.Nuestras-Redes ul li {
+    text-align: left;
+}
+
+.datos p,
+.Nuestras-Redes p {
+    font-size: 14px;
+}
+
+.datos ul li,
+.Nuestras-Redes ul li {
+    font-size: 13px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .contacto {
+        flex-direction: row;
+    }
+}
+
+.contacto div {
+    width: 100%;
+}
+
+.formulario p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .formulario p {
+        flex-direction: row;
+    }
+}
+
+.formulario p label {
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.formulario p:nth-child(4) {
+    align-items: flex-start;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 150px;
+}
+
+.formulario input[type="submit"] {
+    background-color: rgb(5, 5, 105);
+    box-shadow: 0 0 10px rgb(5, 5, 105);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: rgb(77, 178, 218);
+}

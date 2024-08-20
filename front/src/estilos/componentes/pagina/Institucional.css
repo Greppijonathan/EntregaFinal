@@ -1,0 +1,132 @@
+.foto-escuela {
+    border: 5px solid black;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.novedad {
+    width: 100%;
+    padding: 16px;
+    border: 10px solid black;
+    text-align: center;
+}
+
+.novedad p {
+    font-size: 20px;
+    text-align: left;
+}
+
+.novedad h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.presentacion {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.presentacion p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.presentacion h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* En esta sección realizo animaciones */
+.columnas section {
+    transition: background-color 1s ease, border 1s ease;
+    border: 5px solid black;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    transition: 1s;
+}
+
+.columnas section:hover {
+    background-color: #d8d5d5;
+    border: 5px solid rgb(7, 7, 150);
+    border-radius: 15px;
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+.titulo-presentacion {
+    transition: color 1s ease, font-size 1s ease;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.titulo-presentacion:hover {
+    color: rgb(7, 7, 150);
+    animation: shake 1s;
+    font-size: 50px;
+}
+
+/* En esta sección ajusto para diferentes tamaños de pantalla */
+
+@media (max-width: 1200px) {
+    .presentacion {
+        max-width: 1000px;
+    }
+
+    .presentacion h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .presentacion {
+        max-width: 600px;
+    }
+
+    .presentacion h2 {
+        font-size: 30px;
+    }
+
+    .novedad p,
+    .novedad h2,
+    .presentacion p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .presentacion {
+        max-width: 100%;
+    }
+
+    .presentacion h2 {
+        font-size: 25px;
+    }
+
+    .novedad p,
+    .novedad h2,
+    .presentacion p {
+        font-size: 16px;
+    }
+}

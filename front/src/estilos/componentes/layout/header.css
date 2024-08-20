@@ -1,0 +1,19 @@
+/* En este archivo van los estilos generales del header*/
+header h1 {
+    color: black;
+    font-size: 48px;
+
+    font-style: arial;
+    text-align: center;
+}
+
+header h2 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.logo-header {
+    text-align: center;
+    font-size: 80px
+}

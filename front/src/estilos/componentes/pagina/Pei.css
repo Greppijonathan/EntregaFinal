@@ -1,0 +1,18 @@
+.pei h1 {
+    color: red;
+    text-align: left;
+}
+
+.pei h2 {
+    text-align: left;
+}
+
+.pei p {
+    text-align: left;
+}
+
+.titulo-aic-pei:hover {
+    color: rgb(5, 5, 105);
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}

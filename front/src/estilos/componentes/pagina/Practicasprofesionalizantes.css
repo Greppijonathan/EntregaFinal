@@ -1,0 +1,92 @@
+.info p {
+    text-align: left;
+}
+
+.info-practicas {
+    text-align: left;
+}
+
+.info-empresas {
+    text-align: left;
+}
+
+.titulo-practicas {
+    font-size: 40px;
+    transition: color 1s ease, font-size 1s ease;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.titulo-practicas:hover {
+    color: rgb(7, 7, 150);
+    animation: shake 1s;
+    font-size: 50px;
+}
+
+.subtitulo-practicas:hover {
+    color: rgb(5, 5, 105);
+    transform: translateX(10px);
+    transition: transform 1s ease;
+}
+
+.info-empresas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-empresas li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-empresas img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Adaptación a diferentes tamaños de pantalla */
+@media (max-width: 1200px) {
+    .titulo-practicas {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 992px) {
+    .titulo-practicas {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo-practicas {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .titulo-practicas {
+        font-size: 20px;
+    }
+}

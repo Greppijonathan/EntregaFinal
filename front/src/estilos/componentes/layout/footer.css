@@ -1,0 +1,32 @@
+footer {
+    background-color: rgb(7, 7, 150);
+    clear: both;
+    color: white;
+    text-align: center;
+    border: solid 5px black;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin: 5px;
+    padding: 5px;
+}
+
+footer p {
+    text-align: center;
+    margin: 20px;
+    font-style: oblique;
+}
+
+/* Media queries para adaptar diferentes pantallas */
+@media (max-width: 768px) {
+    footer {
+        padding: 10px;
+        border-width: 2px;
+    }
+
+    footer p {
+        margin: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Media queries para adaptar diferentes pantallas */
